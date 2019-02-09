@@ -1,0 +1,137 @@
+/*removes webpage default margin*/
+*{
+    margin:0 ;
+}
+/*body*/
+body{
+    background-color: #F6F7D7;
+    text-decoration-color:#080D0B; 
+}
+/*nav style*/
+nav ul{
+    display:flex;
+    justify-content:space-between;
+    background-color: #CC9933;
+    list-style:none ;
+}
+/*nav link style*/
+nav li a{
+    display: block;
+    padding: 15px;
+    color: #080D0B;
+}
+li a:hover{
+    color:#F6F7D7;
+}
+li a:active{
+    color:#F62422;
+}
+/*other links style*/
+a{
+    text-decoration: none;
+    color:brown;
+}
+
+/*main style*/
+main{
+
+}
+/*all h1 tag*/
+h1{
+    margin: 10px;
+    text-align: center;
+}
+/*signin and signup style*/
+section.sign{
+   display: flex;
+   justify-content: center;  
+   margin: 8em 0;
+}
+div.sign{
+    text-align: center;
+    width:500px;
+    border-radius: 15px;
+}
+/* sign in and sign up input tag styles*/
+.input{
+    margin: 15px;
+    padding: 10px;
+    font-size: 15px;
+    border-color:#CC9933;
+    border-radius: 4px;
+}
+/* button style*/
+button{
+    margin: 15px;
+    padding: 15px 50px;
+    background-color:#CC9933;
+    border-radius: 20px;
+    color: brown;   
+}
+/*todays menu style*/
+div.head{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+/*all images*/
+img{
+    width: 20em;
+    display: flex;
+    margin:10px;
+    border-radius:15px;
+}
+
+/*Dashboard table style*/
+table{
+    width: 100%;
+    text-align: center;
+}
+table,tr,th,td{
+    border-bottom: solid;
+    border-color: #CC9933  ;
+    border-collapse: collapse;
+    padding:40px;
+}
+
+/*caterer area style*/
+#wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    border: 4px solid #CC9933;
+}
+.box {
+    width: 40%;
+    height: 400px;
+    border: 2px solid #CC9933;
+}
+li.move {
+    display: block;
+    font-size: 20px;
+    padding: 10px 9px;
+    margin: 4px 4px;
+    background:#CC9933;
+    width: 50%;
+    border-radius: 9px;
+}
+li.move:hover{
+   cursor: -webkit-grab;
+}
+/*
+@media(max-width:768px){
+    {
+    }
+}
+*/
+
+
+
+
+/*footer*/
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #CC9933;
+}
