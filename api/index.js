@@ -1,22 +1,18 @@
-// import express from 'express';
-// import mealsRoute from './routes/mealsRoute';
+// const express = require('express');
 
-// const app =  express();
+// const app = express();
+// const PORT = 9001;
 
-// app.use('/api/v1/meals', mealsRoute);
+// app.get('/', function(req, res){
+//     return res.send('the app is working');
+// });
 
-// const PORT = 8080;
-// app.listen(PORT);
-// console.log('Magic happens on port ' + port);
+// app.listen(PORT, function(){
+//     console.log('Server is working on port' + PORT);
+// });
 
 
 
-// server.js
-
-// BASE SETUP
-// =============================================================================
-
-// call the packages we need
 var express    = require('express');        // call express
 var app        = express();                 // define our app using express
 // var bodyParser = require('body-parser');
@@ -48,6 +44,3 @@ app.use('/api', router);
 // =============================================================================
 app.listen(port);
 console.log('Magic happens on port ' + port);
-
-
-
