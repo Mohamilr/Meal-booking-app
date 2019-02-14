@@ -1,0 +1,37 @@
+{
+  "name": "meal_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://mohamilr.github.io/Meal-booking-app/"
+  },
+  "keywords": [
+    "meal"
+  ],
+  "author": "Mohammed ibrahim",
+  "license": "ISC",
+  "dependencies": {
+
+    "body-parser": "^1.18.3",
+
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.10"
+  },
+  "description": ""
+}
