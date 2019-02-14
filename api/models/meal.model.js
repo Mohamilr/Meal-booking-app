@@ -1,4 +1,4 @@
-export default class Meals {
+ class Meal {
   constructor() {
     this.id = null;
     this.name = null;
@@ -7,3 +7,5 @@ export default class Meals {
     this.currency = null;
   }
 }
+
+export default Meal;
