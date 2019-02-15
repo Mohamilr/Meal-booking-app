@@ -1,5 +1,6 @@
 export default{
-    meals: [
+    
+    meals : [
         {
             id: 1,
             name: "Semo",
