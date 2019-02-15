@@ -4,7 +4,7 @@
 }
 /*body*/
 body{
-    background-color: white;
+    background-color: #ffffff;
     text-decoration-color:#080D0B; 
     font-family: 'Noto Serif SC', serif;
 }
@@ -12,25 +12,25 @@ body{
 nav ul{
     display:flex;
     justify-content:space-between;
-    background-color: #CC9933;
+    background-color: #FD4D02;
     list-style:none ;
 }
 /*nav link style*/
 nav li a{
     display: block;
     padding: 15px;
-    color: #080D0B;
+    color:  #ffffff;
 }
-li a:hover{
-    color:#F6F7D7;
+ a:hover{
+    color:#fff111;
 }
-li a:active{
-    color:#F62422;
+.active{
+    background-color:#F4461D;
 }
 /*other links style*/
 a{
     text-decoration: none;
-    color:brown;
+    color:#F4461D;
 }
 /*all h1 tag*/
 h1{
@@ -46,7 +46,6 @@ h2{
 section.sign{
    display: flex;
    justify-content: center;  
-   margin: 5em 0;
 }
 div.sign{
     text-align: center;
@@ -58,16 +57,19 @@ div.sign{
     margin: 15px;
     padding: 10px;
     font-size: 15px;
-    border-color:#CC9933;
+    border-color: #FD4D02;
     border-radius: 4px;
 }
 /* button style*/
 button{
     margin: 15px;
     padding: 15px 50px;
-    background-color:#CC9933;
+    background-color: #FD4D02;
     border-radius: 20px;
-    color:#080D0B;   
+    color:#ffffff;   
+}
+button a{
+    color:#ffffff;
 }
 /*all images*/
 img{
@@ -95,9 +97,10 @@ div.dash{
     flex-wrap:wrap;
      justify-content:space-between;
      text-align: center;
+    margin: 3em;
 }
 div.dash-inner{
-     border: 1px solid #CC9933;
+     border: 1px solid #FD4D02;
     border-collapse: collapse;
     width: auto;
      border-radius: 20px;
@@ -108,7 +111,7 @@ table{
 }
 table,tr,th,td{
     border-bottom: solid;
-    border-color: #CC9933  ;
+    border-color:#FD4D02;
     border-collapse: collapse;
     padding:10px;
 }
@@ -116,5 +119,10 @@ table,tr,th,td{
 footer{
     text-align: center;
     padding: 10px;
-    background-color: #CC9933;
+/*    background-color: #CC9933  */
+    background-color: #FD4D02;
+
+}
+footer a{
+    color: #ffffff;
 }
