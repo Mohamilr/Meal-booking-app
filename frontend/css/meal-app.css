@@ -32,6 +32,21 @@ a{
     text-decoration: none;
     color:#F4461D;
 }
+/*index banner*/
+.banner{
+    background: url(../images/food%201.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+}
+
+.banner h1{
+    padding:200px 0 ; 
+    color:#FD4D02;
+    font-size: 55px;
+    font-weight: 500;
+    text-transform: capitalize;
+   
+}
 /*all h1 tag*/
 h1{
     margin: 10px;
@@ -80,18 +95,31 @@ img{
 }
 /*todays menu style*/
 div.head{
+    
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
-     text-align: center;
+    text-align: center;
+}
+ul{
+    padding-left: 10px;
+    list-style: none
 }
 /*caterer area style*/
 div.caterer{
-   text-align: center;
+    text-align: center;
     border: 1px solid #CC9933;
     border-radius: 20px;
 }
 /*Dashboard table style*/
+.appname{
+     text-align: center;
+     color: #ffffff;
+     background-color: #FD4D02;
+     display: block;
+     padding: 5px;
+    
+}
 div.dash{
   display: flex;
     flex-wrap:wrap;
@@ -119,7 +147,6 @@ table,tr,th,td{
 footer{
     text-align: center;
     padding: 10px;
-/*    background-color: #CC9933  */
     background-color: #FD4D02;
 
 }

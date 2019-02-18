@@ -1,20 +1,18 @@
-import { Router} from 'express';
+import { Router } from 'express';
 
-//controller
 import MealController from '../controllers/meal.controller';
 
-const router = Router();
+const mealRoute = Router();
 
-router.get('/', MealController.fetchAllMeals);
-router.post('/', MealController.addAMeal);
-router.put('/:id', MealController.getSingleMeal);
-// router.delete('/', MealController.deleteAMeal);
-// router.post('/', MealController.setMeals);
-// router.get('/', MealController.getAMenu);
-// router.post('/', MealController.selectAMeal);
-// router.put('/', MealController.modifyAMeal);
-// router.get('/', MealController.getAllOrders);
+mealRoute.get('/', MealController.getAllMeals);
+mealRoute.post('/', MealController.postMeal);
+mealRoute.put('/:id', MealController.putMeal);
+mealRoute.delete('/:id', MealController.deleteMeal);
 
-export default router;
+export default mealRoute;
+
+
+
+
 
 

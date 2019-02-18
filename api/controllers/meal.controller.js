@@ -1,72 +1,98 @@
-import MealService from '../services/meal.service';
+import meals from '../models/data/meals';
 
-const MealController = {
-    fetchAllMeals(req, res){
-        const allMeals = MealService.fetchAllMeals();
-        return res.json({
-            status: 'success',
-            data: allMeals
-        }).status(200);
-    },
-    addAMeal(req, res){
-        const newMeal = req.body;
-        const createdMeal = MealService.addMeal(newMeal);
-        return res.json({
-            status: 'success',
-            data: createdMeal
-        }).status(200);
-    },
-    getSingleMeal(req, res){
-        const id = req.params.id;
-        const foundMeal = MealService.getAMeal(id);
-          return res.json({
-            status: 'success',
-            data: foundMeal
-        }).status(201);
-    },
-//     deleteAMeal(req, res){
-//         const deleteMeal = MealService.deleteAMeal(id);
-//         return res.json({
-//             status: 'success',
-//             data: deleteMeal
-//     }).status(204);
-// },
-//     setMeals(req, res){
-//         const setMeals = MealService.setMeals
-//         return res.json({
-//             status: 'success',
-//             data: deleteMeal
-//     }).status(204);
-//     },
-//     getAMenu(req, res){
-//         const getmenu = MealService.getAMenu;
-//         return res.json({
-//             status: 'success',
-//             data: deleteMeal
-//     }).status(200);
-//     },
-//     selectAMeal(req,res){
-//         const selectMeal = MealService.selectAMeal;
-//         return res.json({
-//             status: 'success',
-//             data: deleteMeal
-//     }).status(200);
-//     },
-//     modifyAMeal(req, res){
-//         const modifyMeal = MealService.modifyAMeal;
-//         return res.json({
-//             status: 'success',
-//             data: deleteMeal
-//     }).status(200);
-//     },
-//     getAllOrders(req,res){
-//         const getOrders = MealService.getAllOrders;
-//         return res.json({
-//             status: 'success',
-//             data: deleteMeal
-//     }).status(200);
-//  }
-};
+class MealController {
+  static getAllMeals(req, res) {
+    if (meals.length === 0) {
+      return res.status(400).json({
+        status: 400,
+        error: 'No meal yet.',
+      });
+    }
+
+    return res.status(200).json({
+      status: 200,
+      data: meals,
+    });
+  }
+
+  static postMeal(req, res) {
+    const { meal } = req.body;
+
+    meals.push({
+      id: meals.length + 1,
+      meal,
+    });
+
+    return res.status(201).json({
+      status: 201,
+      data: [{
+        id: meals.length,
+        meal,
+      }],
+    });
+  }
+
+  static putMeal(req, res) {
+    if (meals.length === 0) {
+      return res.status(400).json({
+        status: 400,
+        error: 'No meal yet.',
+      });
+    }
+
+    const id = parseInt(req.params.id, 10);
+    const { meal } = req.body;
+
+    meals[id - 1] = {
+      id,
+      meal,
+    };
+
+    return res.status(200).json({
+      status: 200,
+      data: [{
+        id,
+        meal,
+      }],
+    });
+  }
+
+  static deleteMeal(req, res) {
+    if (meals.length === 0) {
+      return res.status(400).json({
+        status: 400,
+        error: 'No meal yet.',
+      });
+    }
+
+    const id = parseInt(req.params.id, 10);
+
+    meals.splice(id - 1, 1);
+
+    return res.status(200).json({
+      status: 200,
+      message: 'Meal deleted',
+    });
+  }
+}
 
 export default MealController;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
