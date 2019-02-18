@@ -143,6 +143,18 @@ table,tr,th,td{
     border-collapse: collapse;
     padding:10px;
 }
+/*confirmation style*/
+#center{
+    text-align: center;
+    margin-top: 30px;
+}
+.center{
+    margin-top: 8em;
+}
+/*cart style*/
+.cart{
+    text-align: center;
+}
 /*footer*/
 footer{
     text-align: center;
