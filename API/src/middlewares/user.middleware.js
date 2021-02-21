@@ -17,6 +17,14 @@ const userMiddleware = {
         check('email').isEmail().withMessage('incorrect email format'),
         check('password').notEmpty().withMessage('Password is required'),
         // check('password').contains(/[A - Z]/).withMessage('Password must contain capiral letter'),
+    ],
+    forgetPassword: [
+        check('email').notEmpty().withMessage('Email is required'),
+        check('email').isEmail().withMessage('incorrect email format')
+    ],
+    changePassword: [
+        check('password').notEmpty().withMessage('Password is required'),
+        check('password').isLength(8).withMessage('Password should be more than 7 characters')
     ]
 }
 
