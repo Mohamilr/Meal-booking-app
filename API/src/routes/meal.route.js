@@ -1,6 +1,6 @@
-import { Router } from 'express';
+const { Router } = require('express');
 
-import MealController from '../controllers/meal.controller';
+const MealController = require('../controllers/meal.controller');
 
 const mealRoute = Router();
 
@@ -9,7 +9,7 @@ mealRoute.post('/', MealController.postMeal);
 mealRoute.put('/:id', MealController.putMeal);
 mealRoute.delete('/:id', MealController.deleteMeal);
 
-export default mealRoute;
+module.exports = mealRoute;
 
 
 
