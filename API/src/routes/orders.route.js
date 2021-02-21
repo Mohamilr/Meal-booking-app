@@ -1,6 +1,6 @@
-import { Router } from 'express';
+const { Router } = require('express');
 
-import OrderController from '../controllers/order.controller';
+const OrderController = require('../controllers/order.controller');
 
 const orderRoute = Router();
 
@@ -8,4 +8,4 @@ orderRoute.post('/', OrderController.postOrder);
 orderRoute.put('/:id', OrderController.putOrder);
 orderRoute.get('/', OrderController.getOrders);
 
-export default orderRoute;
+module.exports = orderRoute;

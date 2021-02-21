@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Mohamilr/Meal-booking-app.svg?branch=develop)](https://travis-ci.com/Mohamilr/Meal-booking-app)
+[![Coverage Status](https://coveralls.io/repos/github/Mohamilr/Meal-booking-app/badge.svg?branch=develop)](https://coveralls.io/github/Mohamilr/Meal-booking-app?branch=develop)
 [![Maintainability](https://api.codeclimate.com/v1/badges/cbcf4165d1b602ec9fce/maintainability)](https://codeclimate.com/github/Mohamilr/Meal-booking-app/maintainability)
 # Meal-booking-app
 
@@ -13,11 +15,11 @@ This is an express.js application which enables users to:
 
 Also enables caterers to:
 
-- **Manage (i.e: add, modify and delete) meal options**
-- **Setup menu for a specific day by selecting from the
-  meal options available on the system.**
-- **See the orders made by the user**
-- **see order history**
+- Manage (i.e: add, modify and delete) meal options
+- Setup menu for a specific day by selecting from the
+  meal options available on the system.
+- See the orders made by the user
+- see order history
 
 # INSTALLATIONS
 
